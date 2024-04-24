@@ -10,13 +10,27 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/**Estilos do Header*/
 header {
     background-color: brown;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
-    height: 48px;
+    height: 70px;
+}
+
+header .image-container {
+    height: 60px;
+}
+
+header .image-container img {
+    height: 100%;
 }
 
 header .menu {
@@ -28,3 +42,16 @@ header .menu {
 header .menu li { 
     padding: 10px 25px;
 }
+
+/**Estilos da Hero*/
+.hero {
+    height: 400px;
+    background-image: url(../public/img/canada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
