@@ -16,7 +16,7 @@ a {
 }
 
 /**Estilos do Header*/
-header {
+.main-header {
     background-color: brown;
     display: flex;
     justify-content: space-between;
@@ -25,21 +25,21 @@ header {
     height: 70px;
 }
 
-header .image-container {
+.main-header .image-container {
     height: 60px;
 }
 
-header .image-container img {
+.main-header .image-container img {
     height: 100%;
 }
 
-header .menu {
+.main-header .menu {
     list-style: none;
     display: flex;
     color: rgb(255, 255, 255);
 }
 
-header .menu li { 
+.main-header .menu li { 
     padding: 10px 25px;
 }
 
@@ -52,6 +52,64 @@ header .menu li {
     background-position: center;
 }
 
+.hero .overlay {
+    background-color:rgba(0, 0, 0, 0.376);
+    height: 100%;
+}
 
+.hero .overlay .intro {
+    width: 50%;
+    padding-left: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(215, 212, 212);
+    gap: 10px;
+}
 
+.hero .overlay .intro h1 {
+    font-size: 45px;
+}
 
+.hero .overlay .intro button {
+    background-color: transparent;
+    width: 95px;
+    height: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/**Estilos da Infos*/
+.infos {
+    background-color: #fff;
+    padding: 60px 150px;
+}
+
+.infos .header-infos {
+    display: flex;
+    width: 100%;
+}
+
+.infos .header-infos #info {
+    width: 50%;
+}
+
+.infos .images {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;  
+    gap: 15px;
+    justify-content: space-between; 
+}
+
+.infos .images #image {
+    width: 31.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
