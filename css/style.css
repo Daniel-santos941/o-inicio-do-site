@@ -15,9 +15,17 @@ a {
     color: inherit;
 }
 
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 /**Estilos do Header*/
 .main-header {
-    background-color: brown;
+    background-color: brown;    
+}
+
+.main-header .header-config {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +53,6 @@ a {
 
 /**Estilos da Hero*/
 .hero {
-    height: 400px;
     background-image: url(../public/img/canada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,48 +64,54 @@ a {
     height: 100%;
 }
 
-.hero .overlay .intro {
-    width: 50%;
-    padding-left: 150px;
-    height: 100%;
+.hero .intro {
+    height: 400px;
+    padding: 0 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: rgb(215, 212, 212);
-    gap: 10px;
 }
 
-.hero .overlay .intro h1 {
+.hero .intro .content-box {
+    width: 50%;
+    color: #fff;
+}
+
+.hero .intro .content-box h1 {
     font-size: 45px;
+    margin-bottom: 10px;
 }
 
-.hero .overlay .intro button {
+.hero .intro .content-box button {
     background-color: transparent;
     width: 95px;
     height: 30px;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
 /**Estilos da Infos*/
 .infos {
     background-color: #fff;
-    padding: 60px 150px;
 }
 
-.infos .header-infos {
+.infos .infos-box {
+    padding: 60px 150px;  
+}
+
+.infos .infos-box .header-infos {
     display: flex;
     width: 100%;
 }
 
-.infos .header-infos #info {
+.infos .infos-box .header-infos #info {
     width: 50%;
 }
 
-.infos .images {
+.infos .infos-box .images {
     display: flex;
     width: 100%;
     margin-top: 30px;  
@@ -106,7 +119,7 @@ a {
     justify-content: space-between; 
 }
 
-.infos .images #image {
+.infos .infos-box .images #image {
     width: 31.5%;
     display: flex;
     justify-content: center;
@@ -114,7 +127,7 @@ a {
     flex-direction: column;
 }
 
-.infos .images #image img {
+.infos .infos-box .images #image img {
     width: 300px;
     height: 300px;
 }
