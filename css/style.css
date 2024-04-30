@@ -131,3 +131,48 @@ a {
     width: 300px;
     height: 300px;
 }
+
+/**Estilos da banner-section*/
+.banner-section {
+    background-image: url(../public/img/deserto.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-section .darkening {
+    background-color: rgb(0, 0, 0, 0.340);
+    height: 100%;
+}
+
+.banner-section .closure {
+    height: 400px;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner-section .closure .text-box {
+    width: 50%;
+    color: #fff;
+}
+
+.banner-section .closure .text-box h1 {
+    margin-bottom: 10px;
+    font-size: 40px; 
+}
+
+.banner-section .closure .text-box button {
+    background-color: #fff;
+    width: 95px;
+    height: 30px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
